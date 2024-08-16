@@ -36,6 +36,6 @@ export async function getStaticProps(context) {
 
   return {
     props: { data },
-    revalidate: 3600,
+    revalidate: +process.env.REVALIDATE,
   };
 }
